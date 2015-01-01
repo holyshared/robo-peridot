@@ -63,5 +63,5 @@ Testing robo-peridot
 
 Please try the following command.
 
-composer install
-composer test
+	composer install
+	composer test
