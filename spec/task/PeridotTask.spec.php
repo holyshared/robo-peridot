@@ -1,5 +1,7 @@
 <?php
 
+namespace peridot\robo\spec\task;
+
 use peridot\robo\task\PeridotTask;
 
 
