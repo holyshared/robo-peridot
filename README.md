@@ -32,6 +32,32 @@ class RoboFile extends Tasks
 }
 ```
 
+Specify more than one file
+----------------------------
+
+If you specify more than one file, you can use the **filePaths** method.  
+The following code is equivalent to `peridot spec/foo.php spec/bar.php`.
+
+```php
+class RoboFile extends Tasks
+{
+    use \peridot\robo\PeridotTasks;
+
+    public function coverallsUpload()
+    {
+        $result = $this->taskPeridot()
+		    ->filePaths([
+		        'spec/foo.php',
+		        'spec/bar.php'
+		    ])
+		    ->run();
+
+	    return $result;
+    }
+}
+```
+
+
 Testing robo-peridot
 ----------------------------
 
