@@ -113,6 +113,16 @@ class PeridotTask implements TaskInterface, CommandInterface
     }
 
     /**
+     * @param array $files
+     * @return $this
+     */
+    public function filePaths(array $files)
+    {
+        $this->args($files);
+        return $this;
+    }
+
+    /**
      * @return string
      */
     public function getCommand()
