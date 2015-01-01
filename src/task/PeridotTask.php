@@ -45,6 +45,64 @@ class PeridotTask implements TaskInterface, CommandInterface
     }
 
     /**
+     * Run tests matching pattern
+     *
+     * @param string $pattern
+     * @return $this
+     */
+    public function grep($pattern)
+    {
+        $this->option("-g", $pattern);
+        return $this;
+    }
+
+    /**
+     * Disable output colors
+     *
+     * @return $this
+     */
+    public function noColors()
+    {
+        $this->option("-C");
+        return $this;
+    }
+
+    /**
+     * Select which reporter to use
+     *
+     * @param string $reporter
+     * @return $this
+     */
+    public function reporter($reporter)
+    {
+        $this->option("-r", $reporter);
+        return $this;
+    }
+
+    /**
+     * Stop on failure
+     *
+     * @return $this
+     */
+    public function bail()
+    {
+        $this->option("-b");
+        return $this;
+    }
+
+    /**
+     * A php file containing peridot configuration
+     *
+     * @param string $configFile
+     * @return $this
+     */
+    public function configuration($configFile)
+    {
+        $this->option("-c", $configFile);
+        return $this;
+    }
+
+    /**
      * @return string
      */
     public function getCommand()
