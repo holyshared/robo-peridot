@@ -9,4 +9,33 @@ Installation of [Robo PHP Task Runner](http://robo.li/) will be mandatory to use
 [![Build Status](https://travis-ci.org/holyshared/robo-peridot.svg?branch=master)](https://travis-ci.org/holyshared/robo-peridot)
 [![Coverage Status](https://coveralls.io/repos/holyshared/robo-peridot/badge.png?branch=master)](https://coveralls.io/r/holyshared/robo-peridot?branch=master)
 
-robo-peridot
+Basic Usage
+----------------------------
+
+To use a task, you must write code such as the following.  
+Options that can be used **-grep**, **-no-colors**, **-reporter**, **--bail**, **--configuration**.
+
+```php
+class RoboFile extends Tasks
+{
+    use \peridot\robo\PeridotTasks;
+
+    public function coverallsUpload()
+    {
+        $result = $this->taskPeridot()
+		    ->bail()
+		    ->directoryPath('spec')
+		    ->run();
+
+	    return $result;
+    }
+}
+```
+
+Testing robo-peridot
+----------------------------
+
+Please try the following command.
+
+composer install
+composer test
