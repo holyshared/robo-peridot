@@ -7,6 +7,6 @@ before_install:
   - composer self-update
   - composer install
 script:
-  - composer coverage
+  - composer test
 after_script:
   - composer coveralls
