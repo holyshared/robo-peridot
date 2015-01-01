@@ -4,6 +4,11 @@
         "peridot-php/peridot": "~1.8",
         "codegyre/robo": "~0.4"
     },
+    "autoload": {
+        "psr-4": {
+            "peridot\\robo\\": "src"
+        }
+    },
     "license": "MIT",
     "authors": [
         {
