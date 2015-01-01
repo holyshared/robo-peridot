@@ -4,6 +4,11 @@
         "peridot-php/peridot": "~1.8",
         "codegyre/robo": "~0.4"
     },
+    "require-dev": {
+        "cloak/peridot-cloak": "~1.0",
+        "expectation/peridot-expectation": "~1.2",
+        "cloak/robo-coveralls-kit": "~1.0"
+    },
     "autoload": {
         "psr-4": {
             "peridot\\robo\\": "src"
@@ -16,5 +21,9 @@
             "email": "holy.shared.design@gmail.com"
         }
     ],
+    "scripts": {
+        "test": "vendor/bin/robo spec:all",
+        "coveralls": "vendor/bin/robo coveralls:upload"
+    },
     "minimum-stability": "stable"
 }

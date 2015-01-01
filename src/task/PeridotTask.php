@@ -103,6 +103,16 @@ class PeridotTask implements TaskInterface, CommandInterface
     }
 
     /**
+     * @param string $directory
+     * @return $this
+     */
+    public function directoryPath($directory)
+    {
+        $this->arg($directory);
+        return $this;
+    }
+
+    /**
      * @return string
      */
     public function getCommand()

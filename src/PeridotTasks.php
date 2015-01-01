@@ -12,7 +12,7 @@ use peridot\robo\task\PeridotTask;
 trait PeridotTasks {
 
     /**
-     * @param null $pathToPeridot
+     * @param string|null $pathToPeridot
      * @return PeridotTask
      */
     protected function taskPeridot($pathToPeridot = null)
