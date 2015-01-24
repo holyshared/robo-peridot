@@ -2,8 +2,6 @@
 
 namespace peridot\robo;
 
-use peridot\robo\task\PeridotTask;
-
 
 /**
  * Trait loadTasks

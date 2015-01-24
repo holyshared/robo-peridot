@@ -2,7 +2,7 @@
 
 namespace peridot\robo\spec\task;
 
-use peridot\robo\task\PeridotTask;
+use peridot\robo\PeridotTask;
 
 
 describe('PeridotTask', function() {

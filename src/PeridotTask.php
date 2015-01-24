@@ -1,6 +1,6 @@
 <?php
 
-namespace peridot\robo\task;
+namespace peridot\robo;
 
 use Robo\Result;
 use Robo\Task\BaseTask;
@@ -13,7 +13,7 @@ use Robo\Exception\TaskException;
 
 /**
  * Class PeridotTask
- * @package peridot\robo\task
+ * @package peridot\robo
  */
 class PeridotTask extends BaseTask implements TaskInterface, CommandInterface, PrintedInterface
 {
