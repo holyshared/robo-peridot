@@ -2,7 +2,7 @@
 
 use Robo\Tasks;
 use coverallskit\robo\CoverallsKitTasks;
-use peridot\robo\PeridotTasks;
+use peridot\robo\loadTasks;
 
 
 /**
@@ -11,7 +11,7 @@ use peridot\robo\PeridotTasks;
 class RoboFile extends Tasks
 {
 
-    use PeridotTasks;
+    use loadTasks;
     use CoverallsKitTasks;
 
 
