@@ -3,10 +3,11 @@
 namespace peridot\robo\task;
 
 use Robo\Result;
-use Robo\Common\TaskIO;
+use Robo\Task\BaseTask;
 use Robo\Common\ExecOneCommand;
 use Robo\Contract\CommandInterface;
 use Robo\Contract\TaskInterface;
+use Robo\Contract\PrintedInterface;
 use Robo\Exception\TaskException;
 
 
@@ -14,10 +15,9 @@ use Robo\Exception\TaskException;
  * Class PeridotTask
  * @package peridot\robo\task
  */
-class PeridotTask implements TaskInterface, CommandInterface
+class PeridotTask extends BaseTask implements TaskInterface, CommandInterface, PrintedInterface
 {
 
-    use TaskIO;
     use ExecOneCommand;
 
 
