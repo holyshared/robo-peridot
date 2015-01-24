@@ -2,14 +2,12 @@
 
 namespace peridot\robo;
 
-use peridot\robo\task\PeridotTask;
-
 
 /**
- * Trait PeridotTasks
+ * Trait loadTasks
  * @package peridot\robo
  */
-trait PeridotTasks {
+trait loadTasks {
 
     /**
      * @param string|null $pathToPeridot

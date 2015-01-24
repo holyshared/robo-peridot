@@ -1,24 +1,25 @@
 <?php
 
-namespace peridot\robo\task;
+namespace peridot\robo;
 
 use Robo\Result;
-use Robo\Output;
-use Robo\Task\Shared\CommandInterface;
-use Robo\Task\Shared\TaskInterface;
-use Robo\Task\Shared\Executable;
-use Robo\Task\Shared\TaskException;
+use Robo\Task\BaseTask;
+use Robo\Common\ExecOneCommand;
+use Robo\Contract\CommandInterface;
+use Robo\Contract\TaskInterface;
+use Robo\Contract\PrintedInterface;
+use Robo\Exception\TaskException;
 
 
 /**
  * Class PeridotTask
- * @package Robo\Task
+ * @package peridot\robo
  */
-class PeridotTask implements TaskInterface, CommandInterface
+class PeridotTask extends BaseTask implements TaskInterface, CommandInterface, PrintedInterface
 {
 
-    use Output;
-    use Executable;
+    use ExecOneCommand;
+
 
     const LOCAL_INSTALL_PATH = 'vendor/peridot-php/peridot/bin/peridot';
 
