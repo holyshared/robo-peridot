@@ -3,7 +3,7 @@
     "description": "Robo task for peridot-php",
     "keywords": ["robo", "task", "peridot-php", "bdd"],
     "require": {
-        "peridot-php/peridot": "~1.11",
+        "peridot-php/peridot": "~1.12",
         "codegyre/robo": "~0.5"
     },
     "require-dev": {
