@@ -3,11 +3,11 @@
     "description": "Robo task for peridot-php",
     "keywords": ["robo", "task", "peridot-php", "bdd"],
     "require": {
-        "peridot-php/peridot": "~1.11",
+        "peridot-php/peridot": "~1.12",
         "codegyre/robo": "~0.5"
     },
     "require-dev": {
-        "cloak/peridot-cloak": "~1.0",
+        "cloak/peridot-cloak": "~1.1",
         "expectation/peridot-expectation": "~1.2",
         "cloak/robo-coveralls-kit": "~1.0"
     },
