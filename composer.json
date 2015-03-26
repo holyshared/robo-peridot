@@ -7,7 +7,7 @@
         "codegyre/robo": "~0.5"
     },
     "require-dev": {
-        "cloak/peridot-cloak": "~1.1",
+        "cloak/peridot-cloak-plugin": "~1.2",
         "expectation/peridot-expectation": "~1.2",
         "cloak/robo-coveralls-kit": "~1.0"
     },
