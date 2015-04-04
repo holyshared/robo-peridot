@@ -8,7 +8,7 @@
     },
     "require-dev": {
         "cloak/peridot-cloak-plugin": "~1.2",
-        "expectation/peridot-expectation": "~1.2",
+        "expect/peridot-expect-plugin": "~2.0",
         "cloak/robo-coveralls-kit": "~1.0"
     },
     "autoload": {
