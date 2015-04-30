@@ -1,11 +1,11 @@
 <?php
 
-namespace peridot\robo\spec\task;
+namespace holyshared\peridot\robo\spec\task;
 
-use peridot\robo\task\PeridotTask;
+use holyshared\peridot\robo\PeridotTask;
 
 
-describe('PeridotTask', function() {
+describe(PeridotTask::class, function() {
     describe('getCommand', function() {
         beforeEach(function() {
             $this->command = 'vendor/peridot-php/peridot/bin/peridot';

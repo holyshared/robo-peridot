@@ -1,24 +1,34 @@
 <?php
 
-namespace peridot\robo\task;
+/**
+* This file is part of robo-peridot.
+*
+* (c) Noritaka Horio <holy.shared.design@gmail.com>
+*
+* This source file is subject to the MIT license that is bundled
+* with this source code in the file LICENSE.
+*/
+
+namespace holyshared\peridot\robo;
 
 use Robo\Result;
-use Robo\Output;
-use Robo\Task\Shared\CommandInterface;
-use Robo\Task\Shared\TaskInterface;
-use Robo\Task\Shared\Executable;
-use Robo\Task\Shared\TaskException;
+use Robo\Task\BaseTask;
+use Robo\Common\ExecOneCommand;
+use Robo\Contract\CommandInterface;
+use Robo\Contract\TaskInterface;
+use Robo\Contract\PrintedInterface;
+use Robo\Exception\TaskException;
 
 
 /**
  * Class PeridotTask
- * @package Robo\Task
+ * @package peridot\robo
  */
-class PeridotTask implements TaskInterface, CommandInterface
+class PeridotTask extends BaseTask implements TaskInterface, CommandInterface, PrintedInterface
 {
 
-    use Output;
-    use Executable;
+    use ExecOneCommand;
+
 
     const LOCAL_INSTALL_PATH = 'vendor/peridot-php/peridot/bin/peridot';
 

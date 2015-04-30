@@ -1,19 +1,19 @@
 {
-    "name": "robo-peridot/robo-peridot",
+    "name": "holyshared/robo-peridot",
     "description": "Robo task for peridot-php",
     "keywords": ["robo", "task", "peridot-php", "bdd"],
     "require": {
-        "peridot-php/peridot": "~1.9",
-        "codegyre/robo": "~0.4"
+        "peridot-php/peridot": "~1.15",
+        "codegyre/robo": "~0.5"
     },
     "require-dev": {
-        "cloak/peridot-cloak": "~1.0",
-        "expectation/peridot-expectation": "~1.2",
-        "cloak/robo-coveralls-kit": "~1.0"
+        "cloak/peridot-cloak-plugin": "~1.2",
+        "expect/peridot-expect-plugin": "~2.0",
+        "cloak/robo-coveralls-kit": "~2.1"
     },
     "autoload": {
         "psr-4": {
-            "peridot\\robo\\": "src"
+            "holyshared\\peridot\\robo\\": "src"
         }
     },
     "license": "MIT",

@@ -7,7 +7,10 @@ Installation of [Robo PHP Task Runner](http://robo.li/) will be mandatory to use
 [![Latest Stable Version](https://poser.pugx.org/robo-peridot/robo-peridot/v/stable.svg)](https://packagist.org/packages/robo-peridot/robo-peridot)
 [![Latest Unstable Version](https://poser.pugx.org/robo-peridot/robo-peridot/v/unstable.svg)](https://packagist.org/packages/robo-peridot/robo-peridot)
 [![Build Status](https://travis-ci.org/holyshared/robo-peridot.svg?branch=master)](https://travis-ci.org/holyshared/robo-peridot)
+[![HHVM Status](http://hhvm.h4cc.de/badge/robo-peridot/robo-peridot.svg)](http://hhvm.h4cc.de/package/robo-peridot/robo-peridot)
 [![Coverage Status](https://coveralls.io/repos/holyshared/robo-peridot/badge.png?branch=master)](https://coveralls.io/r/holyshared/robo-peridot?branch=master)
+[![Dependency Status](https://www.versioneye.com/user/projects/54c383e66c003567fd000457/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54c383e66c003567fd000457)
+
 
 Basic Usage
 ----------------------------
@@ -18,7 +21,7 @@ Options that can be used **-grep**, **-no-colors**, **-reporter**, **--bail**, *
 ```php
 class RoboFile extends Tasks
 {
-    use \peridot\robo\PeridotTasks;
+    use \peridot\robo\loadTasks;
 
     public function coverallsUpload()
     {
@@ -41,7 +44,7 @@ The following code is equivalent to `peridot spec/foo.php spec/bar.php`.
 ```php
 class RoboFile extends Tasks
 {
-    use \peridot\robo\PeridotTasks;
+    use \peridot\robo\loadTasks;
 
     public function coverallsUpload()
     {
