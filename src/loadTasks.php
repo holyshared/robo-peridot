@@ -9,7 +9,7 @@
 * with this source code in the file LICENSE.
 */
 
-namespace peridot\robo;
+namespace holyshared\peridot\robo;
 
 
 /**

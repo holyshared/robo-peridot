@@ -1,8 +1,8 @@
 <?php
 
-namespace peridot\robo\spec\task;
+namespace holyshared\peridot\robo\spec\task;
 
-use peridot\robo\PeridotTask;
+use holyshared\peridot\robo\PeridotTask;
 
 
 describe(PeridotTask::class, function() {

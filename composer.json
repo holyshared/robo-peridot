@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "peridot\\robo\\": "src"
+            "holyshared\\peridot\\robo\\": "src"
         }
     },
     "license": "MIT",
