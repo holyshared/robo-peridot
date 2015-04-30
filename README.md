@@ -21,7 +21,7 @@ Options that can be used **-grep**, **-no-colors**, **-reporter**, **--bail**, *
 ```php
 class RoboFile extends Tasks
 {
-    use \peridot\robo\loadTasks;
+    use \holyshared\peridot\robo\loadTasks;
 
     public function coverallsUpload()
     {
