@@ -1,5 +1,5 @@
 {
-    "name": "robo-peridot/robo-peridot",
+    "name": "holyshared/robo-peridot",
     "description": "Robo task for peridot-php",
     "keywords": ["robo", "task", "peridot-php", "bdd"],
     "require": {
