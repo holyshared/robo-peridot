@@ -5,7 +5,7 @@ namespace peridot\robo\spec\task;
 use peridot\robo\PeridotTask;
 
 
-describe('PeridotTask', function() {
+describe(PeridotTask::class, function() {
     describe('getCommand', function() {
         beforeEach(function() {
             $this->command = 'vendor/peridot-php/peridot/bin/peridot';
