@@ -44,7 +44,7 @@ The following code is equivalent to `peridot spec/foo.php spec/bar.php`.
 ```php
 class RoboFile extends Tasks
 {
-    use \peridot\robo\loadTasks;
+    use \holyshared\peridot\robo\loadTasks;
 
     public function coverallsUpload()
     {
