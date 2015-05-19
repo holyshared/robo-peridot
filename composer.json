@@ -8,8 +8,8 @@
         "codegyre/robo": "~0.5"
     },
     "require-dev": {
-        "cloak/peridot-cloak-plugin": "~1.2",
-        "expect/peridot-expect-plugin": "~2.0",
+        "cloak/peridot-cloak-plugin": "~2.0",
+        "expect/peridot-expect-plugin": "~3.0",
         "cloak/robo-coveralls-kit": "~2.1"
     },
     "autoload": {
