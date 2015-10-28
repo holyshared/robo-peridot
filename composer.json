@@ -4,7 +4,7 @@
     "keywords": ["robo", "task", "peridot-php", "bdd"],
     "require": {
         "php": ">=5.5.0",
-        "peridot-php/peridot": "~1.15",
+        "peridot-php/peridot": "~1.16",
         "codegyre/robo": "~0.5"
     },
     "require-dev": {
