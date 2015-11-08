@@ -5,7 +5,7 @@
     "require": {
         "php": ">=5.5.0",
         "peridot-php/peridot": "~1.16",
-        "codegyre/robo": "~0.5"
+        "codegyre/robo": "~0.6"
     },
     "require-dev": {
         "cloak/peridot-cloak-plugin": "~2.0",
